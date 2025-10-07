@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Pista 5 💌</title>
+</head>
+<body style="font-family: Arial; text-align: center; padding: 50px;">
+    <h1>Nem sei mais o que eh estar irritada contigo ! 😍</h1>
+    <p>O que nos faz feliz aos dois?</p>
+    
+    <input type="text" id="resposta" placeholder="Digite a resposta aqui">
+    <button onclick="verificar()">Enviar</button>
+    
+    <p id="mensagem" style="color: red; font-weight: bold;"></p>
+    
+    <script>
+        function verificar() {
+            const resposta = document.getElementById("resposta").value.toLowerCase();
+            if(resposta === "Sexo") { 
+                window.location.href = "pista6.html";
+            } else {
+                document.getElementById("mensagem").innerText = "Ops! Tente novamente 😅";
+            }
+        }
+    </script>
+</body>
+</html>
