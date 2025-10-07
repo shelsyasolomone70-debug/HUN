@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Pista 3 💖</title>
+</head>
+<body style="font-family: Arial; text-align: center; padding: 50px;">
+    <h1>Ahahaha,muito bom ! 😘</h1>
+    <p>O que mais me deixa irritada em ti?</p>
+    
+    <input type="text" id="resposta" placeholder="Digite a resposta aqui">
+    <button onclick="verificar()">Enviar</button>
+    
+    <p id="mensagem" style="color: red; font-weight: bold;"></p>
+    
+    <script>
+        function verificar() {
+            const resposta = document.getElementById("resposta").value.toLowerCase();
+            if(resposta === "Quando a nossa comunicacao falha") { 
+                window.location.href = "pista4.html";
+            } else {
+                document.getElementById("mensagem").innerText = "Ops! Tente novamente 😅";
+            }
+        }
+    </script>
+</body>
+</html>
