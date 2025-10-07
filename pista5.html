@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Pista 4 🌹</title>
+</head>
+<body style="font-family: Arial; text-align: center; padding: 50px;">
+    <h1>ahaha, ok ok! 💕</h1>
+    <p>Qual foi o nosso primeiro filme juntos?</p>
+    
+    <input type="text" id="resposta" placeholder="Digite a resposta aqui">
+    <button onclick="verificar()">Enviar</button>
+    
+    <p id="mensagem" style="color: red; font-weight: bold;"></p>
+    
+    <script>
+        function verificar() {
+            const resposta = document.getElementById("resposta").value.toLowerCase();
+            if(resposta === "the conjuring") { 
+                window.location.href = "pista5.html";
+            } else {
+                document.getElementById("mensagem").innerText = "Ops! Tente novamente 😅";
+            }
+        }
+    </script>
+</body>
+</html>
